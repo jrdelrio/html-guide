@@ -17,4 +17,3 @@ El proyecto sigue una estructura de directorios simple:
 │
 ├── index.html      # Página principal que muestra la guía de etiquetas
 ├── styles.css      # Archivo CSS para dar estilo a la página
-└── /assets         # Carpeta para imágenes o recursos adicionales (opcional)
