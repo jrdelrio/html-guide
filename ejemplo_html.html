@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Ejemplo de 60 etiquetas HTML" />
+        <title>Ejemplo de HTML con 60 etiquetas</title>
+        <link rel="stylesheet" href="./ejemplo_html.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Guía de etiquetas HTML</h1>
+            <nav id="creative-nav">
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Servicios <span class="icon">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Consultoría</a></li>
+                            <li><a href="#">Desarrollo Web</a></li>
+                            <li><a href="#">Marketing Digital</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Productos <span class="icon">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Apps Móviles</a></li>
+                            <li><a href="#">Inteligencia Artificial</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="intro">
+            <h2>Introducción</h2>
+            <p>
+                Este documento contiene más de 60 etiquetas HTML. Algunas de
+                estas etiquetas son semánticas, otras son para contenido
+                multimedia, y algunas son interactivas.
+            </p>
+            <p>
+                Este es un ejemplo de
+                <abbr title="Lenguaje de Marcado de Hipertexto">HTML</abbr> bien
+                estructurado y <mark>resaltado</mark> para que aprendas.
+            </p>
+            <figure>
+                <img src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png" alt="Imagen de ejemplo" width="200" />
+                <figcaption>Figura 1: Imagen de ejemplo</figcaption>
+            </figure>
+        </section>
+
+        <section id="article">
+            <h2>Artículo de ejemplo</h2>
+            <article>
+                <h3>¿Qué es HTML?</h3>
+                <p>
+                    <strong>HTML</strong> significa
+                    <em>HyperText Markup Language</em>. Es el lenguaje estándar
+                    para crear páginas web.
+                </p>
+                <p>Este es un ejemplo de código HTML:</p>
+                <pre><code>&lt;p&gt;Este es un párrafo en HTML&lt;/p&gt;</code></pre>
+                <aside>
+                    <p>
+                        <small
+                            >Nota: HTML es un lenguaje de marcado, no un
+                            lenguaje de programación.</small
+                        >
+                    </p>
+                </aside>
+            </article>
+
+            <article>
+                <h3>Ventajas del uso de HTML semántico</h3>
+                <ul>
+                    <li>Mejor accesibilidad</li>
+                    <li>Mejor SEO</li>
+                    <li>Estructura más clara</li>
+                </ul>
+                <p>
+                    Algunos elementos semánticos importantes son
+                    <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                    <code>&lt;article&gt;</code>, y <code>&lt;footer&gt;</code>.
+                </p>
+            </article>
+        </section>
+
+        <section id="media-gallery">
+            <h2>Galería de Medios Mejorada</h2>
+
+            <!-- Imagen con <picture> para diferentes resoluciones -->
+            <figure>
+                <picture>
+                    <source
+                        media="(min-width: 800px)"
+                        srcset="https://via.placeholder.com/800x400"
+                    />
+                    <source
+                        media="(min-width: 600px)"
+                        srcset="https://via.placeholder.com/600x300"
+                    />
+                    <img
+                        src="https://via.placeholder.com/400x200"
+                        alt="Imagen adaptable"
+                    />
+                </picture>
+                <figcaption>
+                    Imagen adaptable usando la etiqueta
+                    <code>&lt;picture&gt;</code>
+                </figcaption>
+            </figure>
+
+            <!-- Video con varias fuentes y un video de YouTube incrustado -->
+            <figure>
+                <video controls poster="https://via.placeholder.com/800x400">
+                    <source
+                        src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+                        type="video/mp4"
+                    />
+                    Tu navegador no soporta videos.
+                </video>
+                <figcaption>Video local con múltiples formatos</figcaption>
+            </figure>
+
+            <!-- Video de YouTube -->
+            <figure>
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+                <figcaption>Video de YouTube incrustado</figcaption>
+            </figure>
+
+            <!-- Audio con varias fuentes -->
+            <figure>
+                <audio controls>
+                    <source
+                        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                        type="audio/mpeg"
+                    />
+                    <source
+                        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.ogg"
+                        type="audio/ogg"
+                    />
+                    Tu navegador no soporta audios.
+                </audio>
+                <figcaption>
+                    Audio con varias fuentes y controles de reproducción
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form action="/submit" method="POST">
+                <!-- Etiqueta <label> para cada input -->
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required />
+
+                <label for="website">Sitio web personal:</label>
+                <input type="url" id="website" name="website" />
+
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age" min="18" max="99" />
+
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate" />
+
+                <label for="appt">Elige una hora:</label>
+                <input type="time" id="appt" name="appt" />
+
+                <label for="appt">Elige una fecha y hora:</label>
+                <input
+                    type="datetime-local"
+                    id="appt"
+                    min="2018-06-07T00:00"
+                    max="2018-06-14T00:00"
+                    name="appt"
+                />
+
+                <label for="color">Elige tu color favorito:</label>
+                <input type="color" id="color" name="color" />
+
+                <label for="range">Nivel de satisfacción (1-10):</label>
+                <input
+                    type="range"
+                    id="range"
+                    name="satisfaction"
+                    min="1"
+                    max="10"
+                />
+
+                <!-- Select con opciones -->
+                <label for="country">País de residencia:</label>
+                <select id="country" name="country">
+                    <option value="es">España</option>
+                    <option value="cl">Chile</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="mx">México</option>
+                </select>
+
+                <label for="members">Miembro de la familia:</label>
+                <input list="frameworks" id="members" />
+                <datalist id="frameworks">
+                    <option value="mama"></option>
+                    <option value="papa"></option>
+                    <option value="hijo"></option>
+                    <option value="primo"></option>
+                    <option value="abuelo"></option>
+                </datalist>
+
+                <!-- Fieldset para agrupar radios -->
+                <fieldset>
+                    <legend>Género</legend>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Masculino</label><br />
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female"
+                    />
+                    <label for="female">Femenino</label><br />
+                    <input
+                        type="radio"
+                        id="other"
+                        name="gender"
+                        value="other"
+                    />
+                    <label for="other">Otro</label><br />
+                </fieldset>
+
+                <!-- Checkbox -->
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes" />
+                    Suscribirse a nuestro boletín
+                </label>
+
+                <!-- Textarea para mensajes largos -->
+                <label for="message">Mensaje:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    cols="50"
+                ></textarea>
+
+                <!-- Etiqueta <output> para mostrar algún resultado -->
+                <label for="output">Resultado:</label>
+                <output name="output" id="output"
+                    >Aquí se mostrará un resultado</output
+                >
+
+                <!-- Botones para enviar o resetear el formulario -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </form>
+        </section>
+
+        <section id="progress-section">
+            <h2>Seguimiento de Progreso</h2>
+
+            <!-- Barra de progreso básica -->
+            <p>Progreso general del proyecto:</p>
+            <progress value="70" max="100"></progress>
+            <output>70%</output>
+
+            <!-- Nueva lista de tareas en progreso -->
+            <h3>Tareas en curso</h3>
+            <ul>
+                <li>
+                    <meter value="0.8" min="0" max="1">80%</meter>
+                    Diseñar la interfaz de usuario
+                </li>
+                <li>
+                    <meter value="0.6" min="0" max="1">60%</meter>
+                    Implementar el backend
+                </li>
+                <li>
+                    <meter value="0.9" min="0" max="1">90%</meter>
+                    Pruebas de rendimiento
+                </li>
+            </ul>
+
+            <!-- Tabla de hitos importantes -->
+            <h3>Hitos Alcanzados</h3>
+            <table>
+                <thead>
+                    <tr>Fresultado
+                        <th>Fecha</th>
+                        <th>Hito</th>
+                        <th>Responsable</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/09/2024</td>
+                        <td>Especificaciones completas</td>
+                        <td>Ana López</td>
+                        <td><mark>Completado</mark></td>
+                    </tr>
+                    <tr>
+                        <td>20/09/2024</td>
+                        <td>Diseño aprobado</td>
+                        <td>Carlos García</td>
+                        <td><mark>Pendiente</mark></td>
+                    </tr>
+                    <tr>
+                        <td>30/09/2024</td>
+                        <td>Entrega del prototipo</td>
+                        <td>Luisa Sánchez</td>
+                        <td><mark>En progreso</mark></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Formulario de retroalimentación -->
+            <h3>Envía tu retroalimentación</h3>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="feedback">Comentarios:</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+
+                <label for="rating">Satisfacción general:</label>
+                <input
+                    type="range"
+                    id="rating"
+                    name="rating"
+                    min="0"
+                    max="100"
+                    value="80"
+                />
+                <output for="rating">80</output>%
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="extra-info">
+            <h2>Explorando Nuevas Etiquetas en HTML</h2>
+
+            <details name="office">
+                <summary>Michael Scott</summary>
+                <p>
+                    <strong>Michael Scott</strong>, interpretado por Steve
+                    Carell, es el personaje principal en las primeras siete
+                    temporadas de *The Office*. Es el gerente regional de Dunder
+                    Mifflin Scranton.
+                </p>
+                <p>
+                    Michael es conocido por su actitud excéntrica, su falta de
+                    habilidades sociales, pero también por su genuino cariño
+                    hacia sus empleados, aunque a veces puede ser un tanto
+                    torpe.
+                </p>
+                <p>
+                    A menudo se describe a sí mismo como un "amigo primero, jefe
+                    después", lo que a veces lleva a situaciones cómicas y
+                    complicadas en la oficina.
+                </p>
+            </details>
+
+            <details name="office">
+                <summary>Dwight Schrute</summary>
+                <p>
+                    <strong>Dwight Schrute</strong>, interpretado por Rainn
+                    Wilson, es el subjefe asistente de la oficina y es
+                    extremadamente leal a su jefe, Michael Scott.
+                </p>
+                <p>
+                    Dwight es conocido por su comportamiento peculiar, su
+                    obsesión por la autoridad y su gran amor por las artes
+                    marciales y su granja de remolachas.
+                </p>
+                <p>
+                    Aunque es un personaje que parece rígido y antisocial, a lo
+                    largo de la serie muestra un lado más vulnerable y humano,
+                    especialmente en su relación con Angela.
+                </p>
+            </details>
+
+            <details name="office">
+                <summary>Jim Halpert</summary>
+                <p>
+                    <strong>Jim Halpert</strong>, interpretado por John
+                    Krasinski, es un vendedor carismático en Dunder Mifflin y el
+                    mejor amigo (y a veces rival) de Dwight Schrute.
+                </p>
+                <p>
+                    Jim es conocido por sus bromas constantes a Dwight, pero
+                    también por su relación romántica con Pam Beesly, la
+                    recepcionista de la oficina.
+                </p>
+                <p>
+                    A lo largo de la serie, Jim evoluciona de un empleado
+                    relajado y bromista a un personaje más maduro, a medida que
+                    su vida profesional y personal avanza.
+                </p>
+            </details>
+
+            <details name="office">
+                <summary>Pam Beesly</summary>
+                <p>
+                    <strong>Pam Beesly</strong>, interpretada por Jenna Fischer,
+                    es la recepcionista de Dunder Mifflin Scranton. A lo largo
+                    de la serie, Pam sueña con convertirse en artista y lucha
+                    por encontrar su verdadero camino.
+                </p>
+                <p>
+                    Su relación con Jim Halpert es uno de los elementos
+                    centrales del show. Su historia de amor evoluciona a lo
+                    largo de la serie, desde una amistad cercana hasta
+                    matrimonio y tener hijos juntos.
+                </p>
+                <p>
+                    Pam también crece profesionalmente en la serie, dejando la
+                    recepción para asumir nuevos desafíos en la oficina.
+                </p>
+            </details>
+
+            <p>
+                Algunas de las etiquetas menos conocidas pero útiles en HTML
+                son:
+            </p>
+
+            <dl>
+                <dt><code>&lt;dl&gt;</code></dt>
+                <dd>
+                    Define una lista de definiciones, con
+                    <code>&lt;dt&gt;</code> (término) y
+                    <code>&lt;dd&gt;</code> (descripción).
+                </dd>
+
+                <dt><code>&lt;address&gt;</code></dt>
+                <dd>Etiqueta para mostrar información de contacto:</dd>
+                <address>
+                    1234 Calle Falsa, <br />
+                    Ciudad Ficticia, <br />
+                    País Imaginario
+                </address>
+
+                <dt><code>&lt;bdi&gt;</code></dt>
+                <dd>
+                    Aísla texto en un idioma o dirección diferente del documento
+                    principal:
+                </dd>
+                <p><bdi>مدرسة</bdi> es "escuela" en árabe.</p>
+
+                <dt><code>&lt;kbd&gt;</code></dt>
+                <dd>Muestra texto que representa la entrada del teclado:</dd>
+                <p>Presiona <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar.</p>
+
+                <dt><code>&lt;s&gt;</code></dt>
+                <dd>
+                    Muestra texto tachado, generalmente para contenido que ya no
+                    es relevante:
+                </dd>
+                <p>Este artículo está <s>descatalogado</s>.</p>
+            </dl>
+
+            <p>Otros ejemplos de etiquetas incluyen:</p>
+
+            <section id="styled-table">
+                <h2>Comparativa de Navegadores</h2>
+
+                <table>
+                    <caption>
+                        Rendimiento de Navegadores (2024)
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Navegador</th>
+                            <th>Soporte para HTML5</th>
+                            <th>Velocidad</th>
+                            <th>Compatibilidad con CSS3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chrome</td>
+                            <td>Excelente</td>
+                            <td>Rápido</td>
+                            <td>Excelente</td>
+                        </tr>
+                        <tr>
+                            <td>Firefox</td>
+                            <td>Excelente</td>
+                            <td>Medio</td>
+                            <td>Muy Bueno</td>
+                        </tr>
+                        <tr>
+                            <td>Safari</td>
+                            <td>Bueno</td>
+                            <td>Rápido</td>
+                            <td>Bueno</td>
+                        </tr>
+                        <tr>
+                            <td>Edge</td>
+                            <td>Muy Bueno</td>
+                            <td>Rápido</td>
+                            <td>Muy Bueno</td>
+                        </tr>
+                        <tr>
+                            <td>Opera</td>
+                            <td>Muy Bueno</td>
+                            <td>Rápido</td>
+                            <td>Bueno</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">
+                                Datos basados en pruebas de 2024
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="dialog-section">
+                <h2>Reserva de Eventos</h2>
+
+                <p>
+                    Haga clic en el siguiente botón para reservar su asistencia
+                    al evento:
+                </p>
+                <button id="openDialog">Abrir formulario de reserva</button>
+
+                <dialog id="eventDialog" >
+                    <form method="dialog">
+                        <h3>Formulario de reserva</h3>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" require />
+
+                        <label for="email">Correo:</label>
+                        <input type="email" id="email" name="email" />
+
+                        <label for="date">Fecha del evento:</label>
+                        <time datetime="2024-10-15">15 de octubre de 2024</time>
+
+                        <menu>
+                            <button type="submit" value="confirm">
+                                Cerrar
+                            </button>
+                        </menu>
+                    </form>
+                </dialog>
+            </section>
+
+            <style>
+                #eventDialog::backdrop {
+                    background: #000;
+                    opacity: .5;
+                }
+            </style>
+
+            <script>
+                const dialog  = document.querySelector('#eventDialog');
+                const openDialog = document.querySelector('#openDialog');
+                openDialog.addEventListener('click', () => {
+                    console.log('modal abierto');
+                    dialog.showModal();
+                })
+
+            </script>
+
+            <p>Aquí también mostramos un texto subíndice y superíndice:</p>
+            <p>
+                H<sub>2</sub>O es agua. El valor de pi es aproximadamente
+                3.141<sup>59</sup>.
+            </p>
+        </section>
+
+        <section id="custom-card-section">
+            <h2>Tarjetas Dinámicas Personalizadas</h2>
+
+            <!-- Plantilla de tarjeta -->
+            <template id="card-template">
+                <div class="card">
+                    <slot name="title"></slot>
+                    <slot name="content"></slot>
+                    <button>Más Información</button>
+                </div>
+            </template>
+
+            <!-- Tarjetas generadas dinámicamente -->
+            <div id="card-container">
+                <div class="card-instance">
+                    <h3 slot="title">Tarjeta 1</h3>
+                    <p slot="content">Contenido de la primera tarjeta.</p>
+                </div>
+
+                <div class="card-instance">
+                    <h3 slot="title">Tarjeta 2</h3>
+                    <p slot="content">Contenido de la segunda tarjeta.</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const template = document.getElementById("card-template");
+            const container = document.getElementById("card-container");
+
+            document.querySelectorAll(".card-instance").forEach((card) => {
+                const clone = document.importNode(template.content, true);
+                clone
+                    .querySelector('slot[name="title"]')
+                    .replaceWith(card.querySelector("h3"));
+                clone
+                    .querySelector('slot[name="content"]')
+                    .replaceWith(card.querySelector("p"));
+                container.appendChild(clone);
+            });
+        </script>
+
+        <section id="language-section">
+            <h2>Lenguajes y Direcciones de Texto</h2>
+
+            <!-- Abreviaturas -->
+            <p>
+                Esta es una
+                <abbr title="HyperText Markup Language">HTML</abbr> abreviatura
+                que describe un lenguaje de marcado.
+            </p>
+
+            <!-- Control de dirección de texto -->
+            <p><bdo dir="rtl">Este texto está en dirección inversa</bdo></p>
+
+            <!-- Anotación fonética con ruby -->
+            <p>
+                Ejemplo de texto japonés con
+                <ruby>漢<rt>かん</rt>字<rt>じ</rt></ruby> usando la etiqueta
+                <code>&lt;ruby&gt;</code> para mostrar la lectura de los
+                caracteres.
+            </p>
+
+            <!-- Lenguajes y Direcciones de Texto en Diferentes Culturas -->
+            <h2>Lenguajes y Direcciones de Texto en Diferentes Culturas</h2>
+
+            <!-- Texto en Árabe (RTL) - Islam -->
+            <p><bdo dir="rtl">بسم الله الرحمن الرحيم</bdo></p>
+            <p>
+                <em>Traducción:</em> "En el nombre de Dios, el Misericordioso,
+                el Compasivo" (Islam)
+            </p>
+
+            <!-- Texto en Hebreo (RTL) - Judaísmo -->
+            <p><bdo dir="rtl">שמע ישראל ה' אלוהינו ה' אחד</bdo></p>
+            <p>
+                <em>Traducción:</em> "Escucha, Israel, el Señor es nuestro Dios,
+                el Señor es Uno" (Judaísmo)
+            </p>
+
+            <!-- Texto en Sánscrito (LTR) - Hinduismo -->
+            <p>ॐ नमः शिवाय</p>
+            <p><em>Traducción:</em> "Om, saludos al Señor Shiva" (Hinduismo)</p>
+
+            <!-- Texto en Pali (LTR) - Budismo -->
+            <p>सर्वे भवन्तु सुखिनः</p>
+            <p>
+                <em>Traducción:</em> "Que todos los seres sean felices"
+                (Budismo)
+            </p>
+
+            <!-- Texto en Japonés (LTR con Ruby) - Shintoísmo -->
+            <p>
+                <ruby>神<rt>かみ</rt>道<rt>みち</rt></ruby>
+            </p>
+            <p><em>Traducción:</em> "Camino de los dioses" (Shintoísmo)</p>
+
+            <!-- Texto en Latín (LTR) - Cristianismo -->
+            <p>In nomine Patris, et Filii, et Spiritus Sancti</p>
+            <p>
+                <em>Traducción:</em> "En el nombre del Padre, del Hijo y del
+                Espíritu Santo" (Cristianismo)
+            </p>
+
+            <!-- Texto en Chino (LTR con Ruby) - Confucianismo -->
+            <p>
+                <ruby>仁<rt>rén</rt></ruby>
+            </p>
+            <p><em>Traducción:</em> "Compasión" (Confucianismo)</p>
+        </section>
+
+        <footer id="site-footer">
+            <section>
+                <h3>Acerca de Nosotros</h3>
+                <p>
+                    Somos una empresa dedicada a proporcionar soluciones
+                    tecnológicas innovadoras. Nuestra misión es facilitar la
+                    vida a través de la tecnología, brindando herramientas que
+                    mejoren la productividad y la eficiencia en diversas áreas.
+                </p>
+            </section>
+
+            <section>
+                <h3>Contáctanos</h3>
+                <address>
+                    <p>
+                        Oficinas Centrales: Calle Falsa 123, Ciudad Ficticia,
+                        País Imaginario
+                    </p>
+                    <p>Teléfono: <tel>+123-456-7890</tel></p>
+                    <p>
+                        Email:
+                        <a href="mailto:info@empresa.com">info@empresa.com</a>
+                    </p>
+                </address>
+            </section>
+
+            <section>
+                <h3>Suscríbete a Nuestro Boletín</h3>
+                <form>
+                    <label for="email">Correo Electrónico:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Introduce tu correo"
+                        required
+                    />
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </section>
+
+            <section>
+                <h3>Política de Privacidad</h3>
+                <p>
+                    Lee nuestra
+                    <a href="#" download="política_de_privacidad.pdf"
+                        >Política de Privacidad</a
+                    >
+                    para más información sobre cómo manejamos tus datos.
+                </p>
+            </section>
+
+            <p>
+                &copy; 2024 Todos los derechos reservados.
+                <time datetime="2024">2024</time>
+            </p>
+        </footer>
+    </body>
+</html>
