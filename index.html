@@ -54,7 +54,11 @@
                 estructurado y <mark>resaltado</mark> para que aprendas.
             </p>
             <figure>
-                <img src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png" alt="Imagen de ejemplo" width="200" />
+                <img
+                    src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png"
+                    alt="Imagen de ejemplo"
+                    width="200"
+                />
                 <figcaption>Figura 1: Imagen de ejemplo</figcaption>
             </figure>
         </section>
@@ -202,14 +206,27 @@
                 <label for="color">Elige tu color favorito:</label>
                 <input type="color" id="color" name="color" />
 
-                <label for="range">Nivel de satisfacción (1-10):</label>
-                <input
-                    type="range"
-                    id="range"
-                    name="satisfaction"
-                    min="1"
-                    max="10"
-                />
+                <fieldset>
+                    <legend>Barras de porcentajes</legend>
+                    <label for="range"
+                        >Nivel de satisfacción (1-10) -> input:
+                    </label>
+                    <input
+                        type="range"
+                        id="range"
+                        name="satisfaction"
+                        min="1"
+                        max="10"
+                    />
+
+                    <label for="battery">
+                        Nivel de batería -> meter:
+                    </label>
+                    <meter id="battery" value="25" min="0" max="100" low="30" high="80" optimum="100"></meter>
+
+                    <label for="progress">Bara de progreso -> progress:</label>
+                    <progress id="progress" value="70" max="100"></progress>
+                </fieldset>
 
                 <!-- Select con opciones -->
                 <label for="country">País de residencia:</label>
@@ -307,7 +324,8 @@
             <h3>Hitos Alcanzados</h3>
             <table>
                 <thead>
-                    <tr>Fresultado
+                    <tr>
+                        Fresultado
                         <th>Fecha</th>
                         <th>Hito</th>
                         <th>Responsable</th>
@@ -553,7 +571,7 @@
                 </p>
                 <button id="openDialog">Abrir formulario de reserva</button>
 
-                <dialog id="eventDialog" >
+                <dialog id="eventDialog">
                     <form method="dialog">
                         <h3>Formulario de reserva</h3>
                         <label for="name">Nombre:</label>
@@ -577,18 +595,17 @@
             <style>
                 #eventDialog::backdrop {
                     background: #000;
-                    opacity: .5;
+                    opacity: 0.5;
                 }
             </style>
 
             <script>
-                const dialog  = document.querySelector('#eventDialog');
-                const openDialog = document.querySelector('#openDialog');
-                openDialog.addEventListener('click', () => {
-                    console.log('modal abierto');
+                const dialog = document.querySelector("#eventDialog");
+                const openDialog = document.querySelector("#openDialog");
+                openDialog.addEventListener("click", () => {
+                    console.log("modal abierto");
                     dialog.showModal();
-                })
-
+                });
             </script>
 
             <p>Aquí también mostramos un texto subíndice y superíndice:</p>

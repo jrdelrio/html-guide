@@ -196,6 +196,9 @@
     font-weight: bold;
     margin-bottom: 8px
   }
+  fieldset {
+    margin-bottom: 20px;
+  }
   
   input[type="text"],
   input[type="email"],
@@ -206,7 +209,6 @@
   input[type="time"],
   input[type='datetime-local'],
   input[type="color"],
-  input[type="range"],
   input[list='frameworks'],
   select,
   textarea {
@@ -218,6 +220,10 @@
     padding: 12px;
     transition: all 0.3s ease;
     width: 100%
+  }
+
+  input[type="range"] {
+    width: -webkit-fill-available;
   }
   
   input[type="text"]:focus,
